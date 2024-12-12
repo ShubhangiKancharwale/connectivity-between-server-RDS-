@@ -1,20 +1,21 @@
 Steps 
--	Deploy linux server(ubuntu) which is deployed in public subnet.
--	After launching instance, go to the RDS service and create data base.
--	While creating database select MariaDB engine type and make sure that DB instance identifier must be unique keep "password" same as identifier.
--	Public access is denied keep it off. 
--	Firstly paste the private IP of server in RDS security gr with port 3306.
--	Then login to linux server update all.
+- Deploy linux server(ubuntu) which is deployed in public subnet.
+- After launching instance, go to the RDS service and create data base.
+- While creating database select MariaDB engine type and make sure that DB instance identifier must be unique keep "password" same as identifier.
+- Public access is denied keep it off. 
+- Firstly paste the private IP of server in RDS security gr with port 3306.
+- Then login to linux server update all.
        apt update all
        apt update
--	For database connectivity install MariaDB-client , MySQL-client check the latest version of MySQL.
+- For database connectivity install MariaDB-client , MySQL-client check the latest version of MySQL.
       apt-get install mariadb-client
       apt install mysql-client-core
--      you can go through and checkout the aws document section of RDS there are the latest version cmd for istallation of mysql
--	When you create RDS database that will generate one endpoint.
--	Run this command :  mysql -h endpoint -P 3306 -u admin -p  replace the endpoint with DB endpoint. 
+      mysql --version
+- you can go through and checkout the aws document section of RDS there are the latest version cmd for istallation of mysql
+- When you create RDS database that will generate one endpoint.
+- Run this command :  mysql -h endpoint -P 3306 -u admin -p  replace the endpoint with DB endpoint. 
 - It will ask you for "password" provide that now able to access the mysql.
--	Try to create database here I created one database and puts some info in that database.
+- Try to create database here I created one database and puts some info in that database.
     For ex  
           show database;      (this query shows you the default tables present in database)
           create database students;
