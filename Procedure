@@ -10,6 +10,7 @@ Steps
 -	For database connectivity install MariaDB-client , MySQL-client check the latest version of MySQL.
       apt-get install mariadb-client
       apt install mysql-client-core
+-      you can go through and checkout the aws document section of RDS there are the latest version cmd for istallation of mysql
 -	When you create RDS database that will generate one endpoint.
 -	Run this command :  mysql -h endpoint -P 3306 -u admin -p  replace the endpoint with DB endpoint. 
 - It will ask you for "password" provide that now able to access the mysql.
